@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'users#index'
-  resources :users, only: [:create, :new] do
+  resources :users, only: [:create, :new, :destroy] do
     member do
       get :notify_email
     end

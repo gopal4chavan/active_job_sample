@@ -1,0 +1,6 @@
+- @users.each do |user|
+    tr
+        td = user.name
+        td = user.email
+        td = link_to "Notify", notify_email_user_path(user), remote: true, title: 'Notify test message to user email'
+        td = link_to "Remove", user_path(user), remote: true, method: 'delete', title: 'Remove user'
